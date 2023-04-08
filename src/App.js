@@ -12,7 +12,7 @@ import {
 
  
 function App() {
-  const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
+  const [mode, setMode] = useState('light');
   const [alert, setAlert] = useState(null);
 
   const showAlert = (message, type)=>{
@@ -44,8 +44,6 @@ function App() {
     <Alert alert={alert}/>
     <div className="container my-3">
     <Switch>
-    {/* /users --> Component 1
-        /users/home --> Component 2 */}
           <Route exact path="/about">
             <About mode={mode} />
           </Route>
